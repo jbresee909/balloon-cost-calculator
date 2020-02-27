@@ -26,7 +26,7 @@ function App() {
 
     // if a margin has been set, add in margin
     if (margin > 0.0) {
-      runningTotal *= parseFloat(margin);
+      runningTotal *= parseFloat(margin) + 1;
     }
     setTotal(runningTotal.toFixed(2));
   }, [setTotal, designs, margin, travelCost]);
